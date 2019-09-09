@@ -9,7 +9,7 @@ git config --global user.name "Rezadwi Bot"
 git config --global push.default simple
 
 rm -rf deployment
-git clone -b master https://github.com/rezadwi.github.io deployment
+git clone -b master https://github.com/rezadwi10/rezadwi.github.io deployment
 rsync -av --delete --exclude ".git" public/ deployment
 cd deployment
 git add -A
