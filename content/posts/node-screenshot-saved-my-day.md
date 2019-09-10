@@ -9,16 +9,16 @@ showonlyimage = false
 Technical Documentation is a must-thing which I need to provide as a part of deliverables from technical team.
 <!--more-->
 It is not like when you done coding, making sure it works, write beautiful commit message, push
-then just let the CI/CD do the works while hoping nothing's gonna bad happen in prod.
+then just let the CI/CD do the rest while hoping nothing's gonna bad happen in prod.
 
 > Prod? the weirdest place where everything used to worked like charms
 
-In my current organization, I was asked to write structured technical documentation explain purpose of the project?
+In my current organization, I was asked to write structured technical documentation explaining purpose of the project?
 What changes you made? How to compile and serve them? Lastly, a brief SIT scenario and the result.
 
 When, I was assigned to do web-based project, sometimes, I need to clearly explain & capture what params I modified in
 a scrolled screen. Actually, I used to steps-scrolled down the screen and then capture the region and then highlighting 
-the changes and then <kbd>ctrl+c</kbd> & <kbd>ctrl+v</kbd> to the docs and keep doing this to the end of the screen.
+the changes and then <kbd>ctrl+c</kbd> & <kbd>ctrl+v</kbd> to docs and keep doing this till the end of the screen.
 It is too time consuming effort for cheap jobs, till I give up and start to find replacement software which can
 do the job for me effortlessly. 
 

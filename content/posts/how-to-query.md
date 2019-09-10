@@ -120,7 +120,7 @@ data everytime the procedure executed.
 One of things, that easiest to do to tweak that query, is **indexing**. 
 
 Indexing is like creating a 'table of contents'
-in document. So, if you want to find the chapter you want to read, you dont need to read all the contents first. That 
+in document. So, if you want to find the chapter you want to read, you dont have to read all the contents first. That 
 'table of contents' you made will guide you to the right chapter you want to read directly.
 
 > Tips: I will avoid to write 'LIKE' condition with '%' as prefix, specifically like '%blabla', your indexing will useless. Ask why?
