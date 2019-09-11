@@ -16,7 +16,7 @@ PygmentsStyle = "manni"
   copyright = "&copy;2019 Reza Dwi"
   sidebarAbout = [
     "Software Engineer, currently based on Jakarta",
-    "This site contains my daily notes as a Software Engineer who always forgetting what I've done to the code."
+    "This site contains my daily notes as a Software Engineer."
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
