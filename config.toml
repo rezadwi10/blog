@@ -71,7 +71,7 @@ disableLanguages        = [""]
       # Masks image in a certain shape. Supported are circle, triangle, diamond, and hexagon.
       shape               = "circle"
       width               = ""
-      alt                 = "Rezaa Dwi"
+      alt                 = "Reza Dwi"
 
   [params.sidebar]
     about               = "Software Engineer, currently based on Jakarta. This site contains my daily notes as a Software Engineer."
@@ -98,7 +98,7 @@ disableLanguages        = [""]
     api                 = ""  # without trailing slash, defaults to "staticman3.herokuapp.com"
     gitProvider         = "github"  # either "github" or "gitlab"
     username            = ""
-    repo                = ""
+    repo                = ""	
     branch              = ""
 
     [params.staticman.recaptcha]
@@ -117,9 +117,9 @@ disableLanguages        = [""]
     weight            = 1
 
   [[menu.main]]
-    name              = "About"
-    identifier        = "about"
-    url               = "/about/"
+    name              = "Me"
+    identifier        = "me"
+    url               = "/me/"
     pre               = "<i class='far fa-id-card'></i>"
     weight            = 2
 
@@ -167,8 +167,8 @@ disableLanguages        = [""]
 #
 #    [[Languages.id.menu.main]]
 #      name              = "Saya"
-#      identifier        = "about"
-#      url               = "/about/"
+#      identifier        = "me"
+#      url               = "/me/"
 #      pre               = "<i class='far fa-id-card'></i>"
 #      weight            = 2
 #

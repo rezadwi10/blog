@@ -1,7 +1,8 @@
 +++
-title = "About"
+title = "Me"
 date = 2019-09-10T15:15:21+07:00
 draft = false
+type = "about"
 +++
 <center>
 <img class="rounded mx-auto d-block" src="/img/about/avatar.png" alt="Profile" width="30%">
