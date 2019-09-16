@@ -19,7 +19,7 @@ disableLanguages        = [""]
   jsFiles               = ["default"]
   # Sets options for highlight.js
   highlightjs           = true
-  highlightjsTheme      = "atom"
+  highlightjsTheme      = "zenburn"
   #highlightjsLang       = ["html", "css", "js", "toml"]
   highlightjsLang       = ["sql"]
   # Sets where "View More Posts" links to
