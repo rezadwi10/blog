@@ -1,68 +1,246 @@
-baseurl = "https://rezadwi10.github.io/"
-title = "TLDR;"
-theme = "hugo-creative-portfolio-theme"
-languageCode = "en-us"
-# Enable comments by entering your Disqus shortname
-disqusShortname = "rezadwi10-github-io"
-# Enable Google Analytics by entering your tracking code
-googleAnalytics = "UA-147439788-1"
-PygmentsStyle = "manni"
+baseurl                 = "https://rezadwi.github.io/"
+DefaultContentLanguage  = "en"
+title                   = "TL;DR"
+theme                   = "hugo-future-imperfect-slim"
+preserveTaxonomyNames   = true
+paginate                = 3
+disqusShortname         = "rezadwi10-github-io"
+googleAnalytics         = "UA-147439788-1"
+pluralizeListTitles     = false
+disableLanguages        = [""]
 
 [params]
-  # Style options: default (pink), blue, green, pink, red, sea, violet
-  # Use custom.css for your custom styling
-  style = "pink"
-  description = "My daily notes as a Software Engineer"
-  copyright = "&copy;2019 Reza Dwi"
-  sidebarAbout = [
-    "Software Engineer, currently based on Jakarta",
-    "This site contains my daily notes as a Software Engineer."
-  ]
-  # Contact page
-     # Since this template is static, the contact form uses www.formspree.io as a
-     # proxy. The form makes a POST request to their servers to send the actual
-     # email. Visitors can send up to a 1000 emails each month for free.
-     #
-     # What you need to do for the setup?
-     #
-     # - set your email address under 'email' below
-     # - upload the generated site to your server
-     # - send a dummy email yourself to confirm your account
-     # - click the confirm link in the email from www.formspree.io
-     # - you're done. Happy mailing!
-  email = "you@yoursite.com"
+  mainSections = ["blog", "post"]
+  # Loads CSS and JavaScript files. The variable is an array so that you can load
+  # multiple/additional files if necessary. The standard theme files can be loaded
+  # by adding the value, "default". Default includes the add-on.css and and-on.js.
+  # Example: ["default", "/path/to/file"]
+  cssFiles              = ["default"]
+  jsFiles               = ["default"]
+  # Sets options for highlight.js
+  highlightjs           = true
+  highlightjsTheme      = "atom"
+  #highlightjsLang       = ["html", "css", "js", "toml"]
+  highlightjsLang       = ["sql"]
+  # Sets where "View More Posts" links to
+  viewMorePostsLink     = "/blog/"
+  # Activate Estimated Reading Times, which appear in the post headers
+  readingTime           = true
+  # Sets which Social Share links appear in posts.
+  # Options are twitter, facebook, reddit, linkedin, pinterest, email
+  #socialShare           = ["twitter", "facebook", "reddit", "linkedin",
+  #                        "pinterest", "email"]
+  socialShare           = ["twitter", "facebook", "linkedin", "email"]
 
-    # Optional Matomo analytics (formerly piwik)
-      # [params.analytics.matomo]
-      #  URL = "https://stats.example.com"
-      #  ID = "42"
-      #  # Track all subdomains with "*.example.com" (Optional)
-      #  domain = "www.example.com"
-      #  # Optional integrity check hash
-      #  hash = ""
+  [params.meta]
+    # Sets the meta tag description
+    description         = "My daily notes as a Software Engineer."
+    # Sets the meta tag author
+    author              = "Reza Dwi"
+    # If you would like to add more comprehensive favicon support passed root
+    # directory favicon.ico, utlize this funtion. It is recommened to use
+    # https://realfavicongenerator.net to generate your icons as that is the basis
+    # for the theme's naming.
+    favicon             = false
+    svg                 = false
+    faviconVersion      = "1"
+    msColor             = "#ffffff" # Copy from the https://realfavicongenerator.net
+    iOSColor            = "#ffffff" # Copy from the https://realfavicongenerator.net
 
-  # Nav links in the side bar
-  [[params.navlinks]]
-  name = "Posts"
-  url = "posts/"
-  home = true
+  [params.header]
+    # Sets the navbarTitle that appears in the top left of the navigation bar
+    navbarTitle         = "TL;DR"
+    # Sets navbarTitle to match the section of the website
+    dynamicTitles       = true
+    searchMenu          = true
+    shareMenu           = true
+    languageMenu        = true
 
-  [[params.navlinks]]
-  name = "About"
-  url = "about/"
+  # These are optional params related to the sidebar. They are recommended, but not
+  # required for proper functionality. HTML is supported within the params.
+  [params.intro]
+    header                = "TL;DR"
+    paragraph             = "My daily notes as a Software Engineer."
+    rssIntro              = true
+    socialIntro           = true
 
-  #[[params.navlinks]]
-  #name = "Get in touch"
-  #url = "contact/"
+    # This appears at the top of the sidebar above params.intro.header.
+    # A width of less than 100px is recommended from a design perspective.
+    [params.intro.pic]
+      src                 = "/img/about/avatar-logo.png"
+      # Masks image in a certain shape. Supported are circle, triangle, diamond, and hexagon.
+      shape               = "circle"
+      width               = ""
+      alt                 = "Rezaa Dwi"
 
-  [params.social]
-  #facebook      = "full page or profile url in facebook"
-  #googleplus    = "full profile url in googleplus"
-  #email         = "email@example.com"
-  twitter       = "https://twitter.com/rezadwi10"
-  linkedin      = "https://www.linkedin.com/in/reza-dwi-saputra/"
-  #stackoverflow = "full profile url in stackoverflow"
-  #instagram     = "full profile url in instagram"
-  github        = "https://github.com/rezadwi10"
-  #youtube       = "full profile url in youtube"
-  #whatsapp      = "wa.me service link"
+  [params.sidebar]
+    about               = "Software Engineer, currently based on Jakarta. This site contains my daily notes as a Software Engineer."
+    # Sets the number of recent posts to show in the sidebar. The default value is 5.
+    postAmount          = 5
+    # set to show or to hide categories in the sidebar
+    categories          = true
+    # Sets Categories to sort by number of posts instead of alphabetical
+    categoriesByCount   = true
+
+  [params.footer]
+    # Sets RSS icons to appear on the sidebar with the social media buttons
+    rssFooter           = true
+    # Sets Social Media icons to appear on the sidebar
+    socialFooter        = true
+
+  # Disqus will take priority over Staticman (github.com/eduardoboucas/staticman)
+  # due to its ease of use. Feel free to check out both and decide which you would
+  # prefer to use. See staticman.yml for additional settings.
+  [params.staticman]
+    # If using GitHub, go to https://github.com/apps/staticman-net
+    # If using GitLab, just add the GitLab bot, NO need to hit `/connect/v3/...`
+    enabled             = false
+    api                 = ""  # without trailing slash, defaults to "staticman3.herokuapp.com"
+    gitProvider         = "github"  # either "github" or "gitlab"
+    username            = ""
+    repo                = ""
+    branch              = ""
+
+    [params.staticman.recaptcha]
+      # Both keys must be present to enable recaptcha
+      siteKey           = "" # Site Key
+      encryptedKey      = ""
+
+[menu]
+  # Sets the menu items in the navigation bar
+  # Identifier prepends a Font Awesome icon to the menu item
+  [[menu.main]]
+    name              = "Home"
+    identifier        = "home"
+    url               = "/"
+    pre               = "<i class='fa fa-home'></i>"
+    weight            = 1
+
+  [[menu.main]]
+    name              = "About"
+    identifier        = "about"
+    url               = "/about/"
+    pre               = "<i class='far fa-id-card'></i>"
+    weight            = 2
+
+  [[menu.main]]
+    name              = "Blog"
+    identifier        = "blog"
+    url               = "/blog/"
+    pre               = "<i class='far fa-newspaper'></i>"
+    weight            = 3
+
+  [[menu.main]]
+    name              = "Categories"
+    identifier        = "categories"
+    url               = "/categories/"
+    pre               = "<i class='fas fa-sitemap'></i>"
+    weight            = 5
+
+  #[[menu.main]]
+  #  name              = "Contact"
+  #  identifier        = "contact"
+  #  url               = "/contact/"
+  #  pre               = "<i class='far fa-envelope'></i>"
+  #  weight            = 6
+
+[Languages]
+  # Each language has its own menu.
+  [Languages.en]
+    LanguageCode        = "en"
+    LanguageName        = "English"
+    weight              = 1
+
+#  [Languages.id]
+#    LanguageCode        = "en"
+#    LanguageName        = "Indonesian"
+#    title               = "TL;DR"
+#    description         = "Tukang Koding, sekarang di Jakarta. Situs ini berisi catatan harian saya sebagai tukang koding."
+#    weight              = 2
+#
+#    [[Languages.id.menu.main]]
+#      name              = "Beranda"
+#      identifier        = "home"
+#      url               = "/"
+#      pre               = "<i class='fas fa-home'></i>"
+#      weight            = 1
+#
+#    [[Languages.id.menu.main]]
+#      name              = "Saya"
+#      identifier        = "about"
+#      url               = "/about/"
+#      pre               = "<i class='far fa-id-card'></i>"
+#      weight            = 2
+#
+#    [[Languages.id.menu.main]]
+#      name              = "Catatan"
+#      identifier        = "blog"
+#      url               = "/blog/"
+#      pre               = "<i class='far fa-newspaper'></i>"
+#      weight            = 3
+#
+#    [[Languages.id.menu.main]]
+#      name              = "Kategori"
+#      identifier        = "categories"
+#      url               = "/categories/"
+#      pre               = "<i class='fas fa-sitemap'></i>"
+#      weight            = 5
+
+    #[[Languages.id.menu.main]]
+    #  name              = "Kontak"
+    #  identifier        = "contact"
+    #  url               = "/contact/"
+    #  pre               = "<i class='far fa-envelope'></i>"
+    #  weight            = 6
+
+# Sets Social Media icons to appear and link to your account. Value should be your
+# username unless otherwise noted. These are the icons affected by socialAppearAtTop
+# and socialAppearAtBottom.
+[social]
+  # Coding Communities
+  github                = "rezadwi10"
+  gitlab                = ""
+  stackoverflow         = "" # User Number
+  bitbucket             = ""
+  jsfiddle              = ""
+  codepen               = ""
+  # Visual Art Communities
+  deviantart            = ""
+  flickr                = ""
+  behance               = ""
+  dribbble              = ""
+  # Publishing Communities
+  wordpress             = ""
+  medium                = ""
+  # Professional/Business Oriented Communities
+  linkedin              = "reza-dwi-saputra/"
+  linkedin_company      = ""
+  foursquare            = ""
+  xing                  = ""
+  slideshare            = ""
+  # Social Networks
+  facebook              = ""
+  googleplus            = ""
+  reddit                = ""
+  quora                 = ""
+  youtube               = ""
+  vimeo                 = ""
+  whatsapp              = "" # WhatsApp Number
+    # WeChat and QQ need testing.
+    wechat              = ""
+    qq                  = "" # User ID Number
+  instagram             = "rezadwi10"
+  tumblr                = ""
+  twitter               = "rezadwi10"
+  skype                 = ""
+  snapchat              = ""
+  pinterest             = ""
+  telegram              = ""
+  vine                  = ""
+  googlescholar         = ""
+  orcid                 = ""
+  researchgate          = ""
+  keybase               = ""
+  mastodon              = ""
+  # Email
+  email                 = "rezadwi@live.co.uk"

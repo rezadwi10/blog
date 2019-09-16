@@ -2,8 +2,11 @@
 title = "Base24 NCPCOM GUI"
 date = 2019-09-11T17:34:30+07:00
 draft = false
-image = "/img/posts/base24.png"
 showonlyimage = false
+type = "post"
+categories = ["Base24"]
+featured = "/posts/base24.png"
+author = "Reza Dwi"
 +++
 
 Starting this year on 2019, I've been working on switching system development environment for almost 9 months.<!--more-->

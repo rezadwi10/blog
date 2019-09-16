@@ -2,8 +2,11 @@
 title = "Node Screenshot Saved My Day"
 date = 2019-09-10T09:17:02+07:00
 draft = false
-image = "https://static.makeuseof.com/wp-content/uploads/2016/04/chrome-vs-firefox-2016-670x335.jpg"
 showonlyimage = false
+type = "post"
+categories = ["Tricks"]
+featured = "/posts/chrome-vs-firefox.jpg"
+author = "Reza Dwi"
 +++
 
 Technical Documentation is a must-thing which I need to provide as a part of deliverables from technical team.

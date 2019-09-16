@@ -1,10 +1,11 @@
 +++
 author = "Reza Dwi"
-categories = []
-description = ""
-linktitle = ""
-images = [""]
-title = "{{ replace .Name "-" " " | title }}"
+categories = [""]
 date = {{ .Date }}
+description = ""
+images = [""]
+linktitle = ""
+title = "{{ replace .Name "-" " " | title }}"
+type = "post"
 
 +++

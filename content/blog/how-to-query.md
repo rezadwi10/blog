@@ -2,7 +2,10 @@
 title = "How to Query"
 date = 2019-09-09T11:41:04+07:00
 draft = false
-image = "https://purepng.com/public/uploads/large/purepng.com-oracle-logologobrand-logoiconslogos-251519939816xngul.png"
+type = "post"
+categories = ["Oracle", "Tricks"]
+featured = "/posts/oracle.png"
+author = "Reza Dwi"
 +++
 
 Here's a brief summary, what i always do when asssigned to write time-consuming process in oracle SQL.
